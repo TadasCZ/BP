@@ -1,0 +1,30 @@
+bim - SNP variant info
+	chrom - chromosome number
+	snp - snp variant identifier (id)
+	cm - genetic distance
+	pos - physical position 
+	a0 - allele 0 - reference allele (A,C,G,T) 
+	a1 - allele 1 - alternative allele
+
+fam - sample (individual) info
+	fid - family id
+	iid - individual id
+	father - paternal id
+	mother - maternal id
+	gender - 1 male, 2 female, 0 unkown
+	trait - phenotype (if defined)
+
+values:
+0 - homozygot (a0/a0)
+1 - heterozygot (a0/a1)
+2 - homozygot (a1/a1)
+NaN - chybějící data
+
+SNP: T/G
+a0 = T, a1 = G
+0 → TT (0 G)
+1 → TG (1 G)
+2 → GG (2 G)
+
+
+watch -n 1 nvidia-smi
